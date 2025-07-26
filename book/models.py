@@ -8,3 +8,8 @@ class Book(models.Model):
     def __str__(self):
         return f"{self.title} by {self.author}"
 
+class User:
+    name = models.CharField(max_length=256)
+
+    def __str__(self):
+        return self.name
